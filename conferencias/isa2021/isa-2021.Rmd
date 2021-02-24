@@ -51,6 +51,10 @@ Julio César Iturra Sanhueza $^1$
 * Evidence on Perceptions about economic inequality shows that these experiences provide a picture of social comparison processes and biased images of society `r Cite(bib, c("Jasso1990"))`  
 
 ---
+class: center, middle
+# _Which is the role of objective and perceived economic inequality on subjective social status formation?_  
+
+---
 # Model
 
 ![](images/scheme.PNG)
@@ -65,7 +69,7 @@ Julio César Iturra Sanhueza $^1$
 2. **Country data**: World Data Indicators (World Bank) and The Standardized World Income Inequality Database `r Cite(bib, c("Solt2020"))`  
 
 
-> **Analytical sample:** 28559 Individuals nested in 39 contries. 
+> **Analytical sample:** 28559 Individuals nested within 39 contries. 
 
  
 ---
@@ -80,7 +84,7 @@ Julio César Iturra Sanhueza $^1$
 **Objective Status:** Household Income Deciles (per cap)
 
 
-**Perceived Salary Gap**: Indirect subjective inequality measurement
+**Perceived Salary Gap**: Indirect subjective inequality measurement 
 
 
 **Question:** _Please write in how much they ACTUALLY earn each (...)_
