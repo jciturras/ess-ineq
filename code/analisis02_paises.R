@@ -280,6 +280,10 @@ plot_model(ml05rs,type = "int") + theme_blank()
   screenreg(l = list(ml05rs))
 }
 
+
+plot(ggeffects::ggpredict(ml05rs, terms = c("D10","country [sample=7]"), type="random"))
+
+
 plot_model(ml05rs,type = "int",mdrt.values = "minmax") +
   labs(title = NULL,color="Gini Index")+
   scale_x_continuous(breaks = 1:10)+

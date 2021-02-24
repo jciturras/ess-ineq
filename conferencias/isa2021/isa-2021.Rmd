@@ -1,5 +1,5 @@
 ---
-title: "Objective Position, Subjective Social Status and Perception of Economic Inequality: A Comparative Analysis of 37 Nations."
+title: "Objective Position, Subjective Social Status and Perception of Economic Inequality: A Comparative Analysis of 39 Nations."
 date: "february, 2021"
 author: "" 
 output:
@@ -27,7 +27,7 @@ bib <- ReadBib("isa-2020.bib", check = TRUE)
 ---
 class: inverse, left, middle
 
-# _Objective Position, Subjective Social Status and Perception of Economic Inequality: A Comparative Analysis of 37 Nations._
+# _Objective Position, Subjective Social Status and Perception of Economic Inequality: A Comparative Analysis of 39 Nations._
 
 
 Julio César Iturra Sanhueza $^1$
@@ -77,16 +77,16 @@ Julio César Iturra Sanhueza $^1$
 
 ### Individual Level
 
-**Objective Status:** Disposable per capita family Income Deciles
+**Objective Status:** Household Income Deciles (per cap)
 
 
 **Perceived Salary Gap**: Indirect subjective inequality measurement
 
-Question: _Please write in how much they ACTUALLY earn each (...)_
 
-* How much do you think a chairman of a large national corporation earns?    
-* How much do you think an unskilled worker in a factory earns? 
+**Question:** _Please write in how much they ACTUALLY earn each (...)_
 
+* How much do you think a **chairman of a large national corporation** earns?    
+* How much do you think an **unskilled worker in a factory** earns? 
 
 
 $$P=\ln\Bigg(\frac{\text{Chairman of corporation}}{\text{ unskilled worker}}\Bigg)$$
@@ -116,12 +116,12 @@ class: center, middle
 ---
 class: center, middle
 
-![:scale 90%](../../output/images/ess-country.png)
+![:scale 90%](images/ess-country.png)
 
 ---
 class: center, middle
 
-![:scale 100%](../../output/images/macro-country.png)   
+![:scale 100%](images/macro-country.png)   
 
 ---
 
@@ -129,18 +129,38 @@ class: center, middle
 load(file = "../../output/tables/modelos.RData")
 texreg::htmlreg(list(ml07c,ml05gm,ml05rs),
                 omit.coef ="(Intercept)|hombre1|edad|educ|labstadesempleado|labstaretirado|labstaestudia|labstatrabajo domestico_cuidados",
-                custom.coef.names = c("Income Decile (D10)","Perceived Salary Gap (log)","Gini index","GDP","D10 x Perc Gap","D10 x Gini"),
+                custom.coef.names = c("Income Decile (D10)","Perceived Salary Gap (log)","Gini index","GDP","D10*Perc-Gap","D10*Gini"),
                 single.row = T,
                 include.aic = F,
                 include.loglik = F,caption = NULL)
 ```
 ---
+class: middle,
 
-![:scale 100%](../../output/images/moderation01.png)  
+![:scale 100%](images/moderation01.png)  
 
 ---
-Conclusions
+# Conclusions
 
+* Analysis support previous evidence concerning objective status and GDP. However, Objective inequality does not have a substantive effect on Subjective Social Status, neither direct nor as a moderator.
+
+* Novel effect of perceived salary gap, also as a moderator of the association between objective and subjective social status.
+
+* Subjective Inequality is more relevant than Objective Inequality concerning Subjective Status Formation. Evidence in favour of the **R&R Blended hypothesis**. 
+
+* Could be interpreted (with caution) as a proxy of social comparison, under de assumption that objective status could lead to a biased image of society, and these perceptions contribute to changes in subjective social status.
+
+
+
+
+---
+# Future Research
+
+* Evaluate how Objective Inequality moderates other objective status meassures (Education and Social Class)
+
+* Other Model specifications: Group centering (GC) and other country level controls (% of Service Class vs Unskilled)
+
+* Test these hypothesis using other datasets (LAPOP)
 
 
 
@@ -149,9 +169,8 @@ Conclusions
 ---
 class: middle, center
 
-### `r  fontawesome::fa(name = "github", fill = "black")` <br> [github.com/jciturras](https://github.com/jciturras) 
+### `r  fontawesome::fa(name = "github", fill = "black")` <br> [github.com/jciturras/ess-ineq](https://github.com/jciturras/ess-ineq) 
 
-### [github.com/formacionciudadana](https://github.com/formacionciudadana)
 
 
 
