@@ -160,7 +160,9 @@ class: middle,
 
 * Other Model specifications: Group centering (GC) and other country level controls (% of Service Class vs Unskilled)
 
-* Test these hypothesis using other datasets (LAPOP)
+* Test these hypothesis using other datasets (LAPOP) that could provide a multilevel and longitudinal approach (2008 - 2018)
+
+* Development of a more precise measurment of social comparison to test the hypothesis.
 
 
 
